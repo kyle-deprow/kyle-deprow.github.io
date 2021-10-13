@@ -129,6 +129,7 @@
 						<ul class="alt">
 							<li>tensorflow</li>
 							<li>keras</li>
+							<li>pandas</li>
 							<li>git</li>
 							<li>docker</li>
 							<li>ros</li>
@@ -206,7 +207,7 @@
 							<h5> Feb 2019 - Current | Hazelwood, MO</h4>
 
 							<ul>
-								<li><b>Autonomy and AI: </b>Designed and developed for an interal AI gym along with creating algorithms and agents to operate within it.</li>
+								<li><b>Autonomy and AI: </b>Designed and developed for an internal AI gym along with creating algorithms and agents to operate within it.</li>
 								<li><b>Constructive Simulation: </b>Lead efforts to bring maritime simulation to the industry standard simulation tool AFSIM.</li>
 								<li><b>Real-time Simulation: </b>Developed capabilities for a portfolio of real-time RHEL Linux training platforms.</li>
 								<li><b>DevSecOps and CI/CD: </b>Implemented container solutions for a variety of use-cases including a local development environment and Jenkins server.</li>
@@ -243,7 +244,7 @@
 						<header class="major">
 						<div class="content">
 							<ul class="features">
-								<li class="icon fa-heat">
+								<li class="icon fa-robot">
 								<h2>Dynamic Controls</h2>
 							</li>
 						</ul>
@@ -275,16 +276,22 @@
 					<p>Here are my projects from the past couple years, ranging from those on github, publication materials, to personal projects. Unfortunately, some of them were developed in private repos, but enjoy those that weren't! :)</p>
 				</header>
 				<ul class="features">
-					<li class="icon fa-comments">
-						<h3><a href="https://github.com/KyleDSLU/midas-lite">Classifying Toxic Comments</a></h3>
-						<p>.</p>
+					<li class="icon fa-chart-line">
+						<h3><a href="https://github.com/KyleDSLU/quantipyml">QuantiPy: Machine Learning Framework for Quant Analysis</a></h3>
+						<p>What started as a small Quantopian.com project to explore tensorflow and pandas real-time data processing blossomed (spun out of control?) into a multi-year project to create a dynamic machine learning framework for financial
+                           (quant) analysis.  I was frustrated with how brittle the reference literature found on most ML forums seemed to be and how un-generalizable any solution derived from these examples would ultimately be.  Instead of building one-off
+                           models that are built on hardcoded parameters, this library takes an design driven approach to building machine learning models. Users can specify the model type, unique features, prediction target, and financial asset and the library will
+                           dynamically solve for the tedious work of calculating features and deriving model layers.  Check out the Github page to see results of using the library to create three LSTM models from scratch (with one using outputs of the other two as features),
+                           and then deploying them to predict results in unseen data.  This work is entirely in Python, tensorflow, and pandas and is forked from my private repo which has a bunch more features such as a full-blown backtesting engine...but..needs work before I feel comfortable
+                           making it public. Please feel free to contact me for more information or to see more of the private repo.</p>
 					</li>
 					<li class="icon fa-hand-holding">
 						<h3>Haptic Modeling through Supervised Learning</h3>
                         <p>In SLU's CHROME lab, we primarily focused on the study of the haptic sensation and how to develop technology around it.  This project was a unique opportunity to reverse that order and instead teach the haptic
                            senses to technology we already developed, specifically a telerobotic arm.  By extracting haptic features of objects help by the end effector, I was able to train models to attempt to detect what it was holding.  The
                            best model was a LSTM solution, but NN, Random Forests, and SVN techniques were also investigated.  As would be expected, our model performance suffered greatly when attempting to detect objects that had haptic
-                           profiles that differed depending on the orientation of how the object was actually held in the end effector, but I believe with sensor fusion, especially with the vision system, these results were very promising!
+                           profiles that differed depending on the orientation of how the object was actually held in the end effector. Picture holding a hammer by the head vs the handle.  
+                           But I believe as part of a sensor fusion solution, especially with a vision system, these results could enhance the overall performance of traditional detection algorithms!
 					</li>
 					<li class="icon fa-tablet">
 						<h3><a href="https://github.com/KyleDSLU/hue">HUE: Hybrid Ultrasonic and Electrostatic Haptic Tablet</a></h3>
@@ -298,12 +305,12 @@
                         <h3><a href="http://github.com/KyleDSLU/gnc_lin_trim_control">Linearizing and Controlling a model F16 in Python</a></h3>
 						<p>Modeling the highly dynamic and unstable flight characteristics of the fighter jets we see every day is challenging enough, but actually deriving the control algorithms which allow them to be pilotable is on another level.
                            This project is an exploration into one technique to accomplish this task by linearizing the state-space representations of small sections of the overall, non-linear flight envelope and solving for optimal control parameters in
-                           that localized solution space.  Solution is written in Python is inspired by that of Dr. Kenneth Buckholtz.</p>
+                           that localized solution space.  Solution is written in Python and is inspired by work of Dr. Kenneth Buckholtz.</p>
 					</li>
 					<li class="icon fa-code">
 						<h3><a href="https://github.com/KyleDSLU/ldv-stage">Laser Doppler Vibrometer Stage</a></h3>
-						<p>Here's a project where I consulted to write code to control a 2DOF stage that moved a surface under a Laser Doppler Vibrometer (LDV) sensor to take accurate vibrational measurements. This code communicated with two-stepper motors
-                           to precisely move a stage over every x,y positional combination and then collected that data from an NI DAQ connected to the LDV sensor.  After perfoming some FFT calculations, this software then dumps the result to a local file for
+						<p>Here's a project where I was consulted to write an application to control a 2DOF stage that moved a surface under a Laser Doppler Vibrometer (LDV) sensor to take accurate vibrational measurements. This code communicated with two-stepper motors
+                           to precisely move a stage over every x,y positional combination while collecting corresponding data from an NI DAQ connected to the LDV sensor.  After perfoming some FFT calculations, this software outputs the result to a local file for
                            further data processing.</p>
 					</li>
 					<li class="icon fa-github">
