@@ -274,9 +274,20 @@ main:focus {
 	border-radius: 50%;
 	flex: none;
 	height: 7.5rem;
-	object-fit: cover;
-	object-position: center 30%;
+	overflow: hidden;
+	position: relative;
 	width: 7.5rem;
+}
+
+/* Frame the face in the original cockpit photo without altering the asset. */
+.portrait img {
+	display: block;
+	height: auto;
+	left: -8%;
+	max-width: none;
+	position: absolute;
+	top: -100%;
+	width: 235%;
 }
 
 /* Companies: two plain descriptions, side by side on wide screens. */
